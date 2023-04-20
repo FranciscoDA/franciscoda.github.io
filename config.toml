@@ -1,6 +1,6 @@
 baseURL = '/'
 languageCode = 'en-us'
-title = '0xFDA'
+title = 'Francisco Altoe'
 theme = 'hugo-cat'
 
 [params]
