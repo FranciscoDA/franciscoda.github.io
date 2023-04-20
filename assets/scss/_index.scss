@@ -1,7 +1,11 @@
+$medium: 900px;
+
 section {
     width: 48em;
     margin: 0 auto 0 auto;
     padding-top: 2em;
+    max-width: 100%;
+    box-sizing: border-box;
 }
 
 section#socials {
@@ -9,6 +13,7 @@ section#socials {
         margin: 0 auto;
         text-align: center;
         font-size: 200%;
+        padding: 0;
         li {
             display: inline;
             margin: 1em;
@@ -19,23 +24,29 @@ section#socials {
 .cventry {
     display: flex;
     flex-direction: row;
+    @media screen and (max-width: $medium) {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
     background-color: #404040;
     color: #ffffff;
     padding: 1em 1em 1.5em 1em;
     margin: 2em auto 0 auto;
     border-radius: 5px;
     box-shadow: 5px 5px 5px #000000a0 ;
-    width: 28em;
     border: 1px solid #000000;
+    width: 28em;
+    max-width: 100%;
+    box-sizing: border-box;
 
     &>div:nth-child(1) {
         flex-grow: 1;
-
+        align-self: stretch;
         p:nth-of-type(2n) {
             padding-left: 2em;
         }
     }
-    &>div:nth-child(2) {
+    &>div:nth-child(3) {
         max-width: 4em;
         width: 4em;
         max-height: 4em;
@@ -55,12 +66,20 @@ section#socials {
         margin-top: 0.1em;
         margin-bottom: 1em;
         font-size: 120%;
+        width: 100%;
+        box-sizing: border-box;
+        @media screen and (max-width: $medium) {
+            flex-direction: column;
+            align-items: center;
+        }
         em {
             margin: 0 0 0 auto;
+            @media screen and (max-width: $medium) {
+                margin: 0;
+            }
             color: #ffffff80;
             font-style: normal;
         }
-        padding-right: 1em;
     }
     p {
         margin-top: 0.5em;
