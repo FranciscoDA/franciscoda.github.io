@@ -1,0 +1,25 @@
+baseURL = '/'
+languageCode = 'en-us'
+title = '0xFDA'
+theme = 'hugo-cat'
+
+[params]
+ava = 'img/avatar.png'
+owner = 'Francisco Altoe'
+talk = "Hello world! I'm a full stack developer from Argentina 🇦🇷"
+blogSection = ['blog']
+description = 'Francisco Altoe'
+
+# TODO: uncomment when more pages are added
+
+#[[menu.main]]
+#name = 'Home'
+#url = '/'
+#weight = 1
+
+#[[menu.main]]
+#name = 'Blog'
+#url = '/blog/'
+#weight = 2
+
+

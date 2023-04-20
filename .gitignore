@@ -1,0 +1,4 @@
+*.lock
+*.swp
+build/*
+resources/_gen/*

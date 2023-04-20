@@ -1,0 +1,32 @@
+body {
+    font-family: 'Computer Modern', sans-serif !important;
+    background-color: #1a1a1a;
+    color: #cdcdcd;
+    font-size: 12pt;
+}
+
+a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 1.6em;
+}
+
+.highlight {
+  border-radius: 7px;
+}
+
+code,
+pre,
+kbd {
+  line-height: 154%;
+  overflow: auto;
+  max-width: 100%;
+  padding: 0.2em;
+  border-radius: 10px;
+  padding-left: 10px;
+  font-size: 13px !important;
+}
+
