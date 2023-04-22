@@ -1,4 +1,4 @@
-$medium-bp: 900px;
+$medium-bp: 800px;
 $card-bg: #404040;
 $card-box-shadow: 5px 5px 5px #000000a0;
 $card-border-radius: 5px;
@@ -130,11 +130,12 @@ section#projects {
             margin-bottom: 1em;
             margin-right: 1em;
             @media screen and (max-width: $medium-bp) {
-                width: 100%
+                width: 100%;
+                margin-right: 0;
             }
-            background-color: $card-bg;
             border: 1px solid #000000;
             padding: 1em 1em 0.5em 1em;
+            background-color: $card-bg;
             box-shadow: $card-box-shadow;
             border-radius: $card-border-radius;
         }
