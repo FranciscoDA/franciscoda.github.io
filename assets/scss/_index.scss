@@ -1,5 +1,7 @@
 $medium-bp: 900px;
 $card-bg: #404040;
+$card-box-shadow: 5px 5px 5px #000000a0;
+$card-border-radius: 5px;
 
 section {
     width: 48em;
@@ -51,8 +53,8 @@ section#experience, section#education {
                 background-color: $card-bg;
                 color: #ffffff;
                 padding: 1em 1em 1.5em 1em;
-                border-radius: 5px;
-                box-shadow: 5px 5px 5px #000000a0;
+                border-radius: $card-border-radius;
+                box-shadow: $card-box-shadow;
                 border: 1px solid #000000;
         
                 flex-grow: 1;
@@ -133,6 +135,8 @@ section#projects {
             background-color: $card-bg;
             border: 1px solid #000000;
             padding: 1em 1em 0.5em 1em;
+            box-shadow: $card-box-shadow;
+            border-radius: $card-border-radius;
         }
     }
 }
@@ -194,7 +198,7 @@ section#contact {
                 padding: 1em;
                 background-color: transparent;
                 transition: background-color 0.5s, border 0.5s;
-                border-radius: 5px;
+                border-radius: $card-border-radius;
                 &:hover {
                     border: 1px solid #f0f0f0ff;
                     background-color: #303050;
