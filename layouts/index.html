@@ -46,42 +46,16 @@
 <section id="projects">
     <h2><a href="#projects">Personal Projects ¶</a></h2>
     <ul>
-        <li>
-            <a title="cv repository" href="https://github.com/FranciscoDA/cv"><i class="fa-brands fa-github cool-link"></i> cv</a>
-            <p>A LaTeX repository for my resume with a custom Github workflow to automatically build and release the compiled PDFs.</p>
-        </li>
-        <li>
-            <a title="ps2mcfs repository" href="https://github.com/FranciscoDA/ps2mcfs"><i class="fa-brands fa-github"></i> ps2mcfs</a>
-            <p>A FUSE driver that allows mounting Sony PlayStation 2 memory card files (either from an emulator or obtained from real hardware) into your linux filesystem.</p>
-        </li>
-        <li>
-            <a title="redatam4r repository" href="https://github.com/FranciscoDA/redatam4r"><i class="fa-brands fa-github"></i> redatam4r</a>
-            <p>R package that allows directly reading files obtained from latinamerican databases (REDATAM) and utilize them in your R environment for analysis.</p>
-        </li>
-        <li>
-            <a title="psvm repository" href="https://github.com/FranciscoDA/psvm"><i class="fa-brands fa-github"></i> psvm</a>
-            <p>R package and C++ library that allows training SVM models in a GPU using CUDA and predicting out-of-sample data. A support vector machine (SVM) is a type of machine learning model that is trained using supervised data to classify samples.</p>
-        </li>
-        <li>
-            <a title="coinage repository" href="https://github.com/FranciscoDA/coinage"><i class="fa-brands fa-github"></i> coinage</a>
-            <p>A Python module that allows validation of cryptocurrency addresses. Supported blockchains are Bitcoin, Bitcoin Cash and Ethereum.</p>
-        </li>
-        <li>
-            <a title="gol repository" href="https://github.com/FranciscoDA/gol"><i class="fa-brands fa-github"></i> gol</a>
-            <p>A Python implementation of Conway's game of life using Pygame and with extensive testing.</p>
-        </li>
-        <li>
-            <a title="django-ipfields repository" href="https://github.com/FranciscoDA/django-ipfields"><i class="fa-brands fa-github"></i> django-ipfields</a>
-            <p>A Django module that allows storing IP addresses in model attributes and querying the database by exact match, prefix and suffix.</p>
-        </li>
-        <li>
-            <a title="django-ipfields repository" href="https://github.com/FranciscoDA/mutetris"><i class="fa-brands fa-github"></i> mutetris</a>
-            <p>A minimal tetris implementation in Python you can play in your terminal.</p>
-        </li>
-        <li>
-            <a title="franciscoda.github.io repository" href="https://github.com/FranciscoDA/franciscoda.github.io"><i class="fa-brands fa-github"></i> franciscoda.github.io</a>
-            <p>GitHub pages repository for this website.</p>
-        </li>
+        <li>{{ partial "gh-project.html" (dict "projectName" "FranciscoDA/cv") }}</li>
+        <li>{{ partial "gh-project.html" (dict "projectName" "FranciscoDA/ps2mcfs") }}</li>
+        {{/* Here we override the project description because the one from the github repo is in spanish */}}
+        <li>{{ partial "gh-project.html" (dict "projectName" "FranciscoDA/redatam4r" "projectDescription" "R package that allows directly reading files obtained from latinamerican census databases (REDATAM) and utilize them in your R environment for analysis.") }}</li>
+        <li>{{ partial "gh-project.html" (dict "projectName" "FranciscoDA/psvm" ) }}</li>
+        <li>{{ partial "gh-project.html" (dict "projectName" "FranciscoDA/coinage" ) }}</li>
+        <li>{{ partial "gh-project.html" (dict "projectName" "FranciscoDA/gol" ) }}</li>
+        <li>{{ partial "gh-project.html" (dict "projectName" "FranciscoDA/django-ipfields" ) }}</li>
+        <li>{{ partial "gh-project.html" (dict "projectName" "FranciscoDA/mutetris" ) }}</li>
+        <li>{{ partial "gh-project.html" (dict "projectName" "FranciscoDA/franciscoda.github.io" "projectDescription" "GitHub pages repository for this website.") }}</li>
     </ul>
 </section>
 

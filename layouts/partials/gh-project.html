@@ -1,0 +1,15 @@
+{{ $repoData := getJSON "https://api.github.com/repos/" .projectName }}
+{{ $langData := getJSON "https://api.github.com/repos/" .projectName "/languages" }}
+<a title="{{ $repoData.name }} repository" href="{{ $repoData.html_url }}"><i class="fa-brands fa-github cool-link"></i> {{ $repoData.name }}</a>
+<p>{{ default $repoData.description .projectDescription }}</p>
+{{ $data := newScratch}}
+{{ range $k, $v := $langData }}
+    {{ $data.Set $k (dict "lang" $k "locs" $v) }}
+{{ end }}
+<ul>
+{{ range ( sort $data.Values ".locs" "desc" ) | first 2 }}
+    <li>{{ .lang }}</li>
+{{ end }}
+    <div style="flex-grow: 1;"></div>
+    <li><a target="_blank" title="Stargazers" href="https://github.com/{{ .projectName }}/stargazers/"><i class="fa-solid fa-star"></i> {{ $repoData.watchers }}</a></li>
+</ul>

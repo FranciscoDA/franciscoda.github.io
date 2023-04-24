@@ -117,15 +117,16 @@ section#projects {
     a {
         color: #ffffff;
     }
-    ul {
+    & > ul {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         padding: 0;
         margin: 0;
 
-        li {
-            display: block;
+        & > li {
+            display: flex;
+            flex-direction: column;
             width: 12em;
             margin-bottom: 1em;
             margin-right: 1em;
@@ -138,6 +139,34 @@ section#projects {
             background-color: $card-bg;
             box-shadow: $card-box-shadow;
             border-radius: $card-border-radius;
+
+            p {
+                flex-grow: 1;
+            }
+
+            & > ul {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: flex-start;
+                padding: 0;
+                margin: 0;
+                & > li {
+                    display: block;
+                    background-color: #00000050;
+                    padding: 0.1em 0.5em;
+                    border-radius: 10px;
+                    margin-right: 0.6em;
+                    margin-top: 0.3em;
+                    cursor: default;
+                    i {
+                        color: #ffff80;
+                    }
+                    &:last-child {
+                        margin-right: 0;
+                    }
+                }
+            }
         }
     }
 }
