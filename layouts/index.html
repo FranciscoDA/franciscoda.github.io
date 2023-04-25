@@ -1,6 +1,8 @@
 {{ define "main" }}
 {{ partial "ava.html" . }}
 
+{{ partial "outline.html" . }}
+
 <section id="socials">
     <h2><a href="#socials">Socials ¶</a></h2>
     <ul>
@@ -81,14 +83,14 @@
         <fieldset>
             <div>
                 <label for="contact-name">Your name</label>
-                <input type="text" id="contact-name" name="name" placeholder="John Doe">
+                <input type="text" id="contact-name" name="name" placeholder="Alan Turing">
                 <label for="contact-contact">Your contact email</label>
-                <input type="text" id="contact-contact" name="contact" placeholder="john@doe.net">
+                <input type="text" id="contact-contact" name="contact" placeholder="alan@turing.ac.uk">
             </div>
             <div></div>
             <div>
                 <label for="contact-message">Your message</label>
-                <textarea id="contact-message" name="message"></textarea>
+                <textarea id="contact-message" name="message" placeholder="Sometimes it is the people who no one imagines anything of who do the things that no one can imagine."></textarea>
             </div>
         </fieldset>
         <div>
