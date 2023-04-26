@@ -47,11 +47,9 @@ function generateOutline() {
         for (const i in targets) {
             if (isElementInViewport(targets[i])) {
                 outlineItems[i].classList.add("active")
-                console.log("item", i, "is visible");
             }
             else {
                 outlineItems[i].classList.remove("active")
-                console.log("item", i, "is not visible");
             }
         }
     }
