@@ -1,12 +1,12 @@
 baseURL = '/'
 languageCode = 'en-us'
-title = 'Francisco Altoe'
+title = 'francisco.altoe.com.ar'
 theme = 'hugo-cat'
 
 [params]
 ava = 'img/avatar.png'
 owner = 'Francisco Altoe'
-talk = "Hello world! I'm a full stack developer from Argentina 🇦🇷"
+talk = "Hello world! <br> My name is Francisco Altoe. I'm a full stack developer from Argentina 🇦🇷 <br> My preferred web stack is Django 🐍 + React ⚛️ <br> Find out about my socials, professional experience and open source projects below:"
 blogSection = ['blog']
 description = 'Francisco Altoe'
 

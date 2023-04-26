@@ -1,17 +1,18 @@
 {{ define "main" }}
-{{ partial "ava.html" . }}
 
 {{ partial "outline.html" . }}
 
-<section id="socials">
-    <h2><a href="#socials">Socials ¶</a></h2>
+<section id="socials" name="Socials &amp; Contact">
+    <!--<h2><a href="#socials">Socials &amp; Contact ¶</a></h2>-->
+    {{ partial "ava.html" . }}
     <ul>
         <li><a target="_blank" title="Linkedin profile" href="https://linkedin.com/in/franciscoaltoe"><i class="fa-brands fa-linkedin cool-link"></i></a></li>
         <li><a target="_blank" title="GitHub profile" href="https://github.com/franciscoda"><i class="fa-brands fa-github cool-link"></i></a></li>
+        <li><a target="_blank" title="Email" data-rot-n="26" data-rot-href="h3uDho6JVICMe4h9g419iVp7ho6Jf0h9iYdIe4w="><i class="fa-regular fa-envelope cool-link"></i></a></li>
     </ul>
 </section>
 
-<section id="experience">
+<section id="experience" name="Experience">
     <h2><a href="#experience">Experience ¶</a></h2>
     <ul>
         <li>
@@ -22,7 +23,7 @@
             </div>
             <div><a href="https://www.grupoieb.com.ar/invertirenbolsa/" target="_blank" title="Invertir en Bolsa landing page"><img class="cool-link" src="img/ieb-black.png" alt="Invertir en Bolsa" /></a></div>
         </li>
-    
+
         <li>
             <div>
                 <h4>Ministerio P&uacute;blico Fiscal <em>Government</em></h4>
@@ -31,7 +32,7 @@
             </div>
             <div><a href="https://www.mpf.gob.ar/" target="_blank" title="MPF public site"><img class="cool-link" src="img/mpf-escudo.png" alt="Ministerio Publico Fiscal" /></a></div>
         </li>
-    
+
         <li>
             <div>
                 <h4>Buenbit <em>Fintech</em></h4>
@@ -45,7 +46,7 @@
     </ul>
 </section>
 
-<section id="projects">
+<section id="projects" name="Personal Projects">
     <h2><a href="#projects">Personal Projects ¶</a></h2>
     <ul>
         <li>{{ partial "gh-project.html" (dict "projectName" "FranciscoDA/cv") }}</li>
@@ -61,7 +62,7 @@
     </ul>
 </section>
 
-<section id="education">
+<section id="education" name="Education">
     <h2><a href="#education">Education ¶</a></h2>
     <ul>
         <li>
@@ -77,26 +78,4 @@
     </ul>
 </section>
 
-<section id="contact">
-    <h2><a href="#contact">Contact ¶</a></h2>
-    <form id="contact-form" accept-charset="UTF-8" action="https://www.formbackend.com/f/50dcdfd6a975cbb0" target="_blank" method="POST">
-        <fieldset>
-            <div>
-                <label for="contact-name">Your name</label>
-                <input type="text" id="contact-name" name="name" placeholder="Alan Turing">
-                <label for="contact-contact">Your contact email</label>
-                <input type="text" id="contact-contact" name="contact" placeholder="alan@turing.ac.uk">
-            </div>
-            <div></div>
-            <div>
-                <label for="contact-message">Your message</label>
-                <textarea id="contact-message" name="message" placeholder="Sometimes it is the people who no one imagines anything of who do the things that no one can imagine."></textarea>
-            </div>
-        </fieldset>
-        <div>
-            <button onclick="this.form.submit(); this.form.style.display='none'; document.getElementById('contact-thank-you').style.display='block'">Send Message</button>
-        </div>
-    </form>
-    <p id="contact-thank-you" style="display: none">Message sent</p>
-</section>
 {{ end }}
