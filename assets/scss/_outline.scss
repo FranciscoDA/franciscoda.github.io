@@ -2,7 +2,7 @@ $big-bp: 1366px;
 
 aside#outline {
     display: none;
-    @media screen and (min-width: $medium-bp) {
+    @media screen and (min-width: $big-bp) {
         display: flex;
     }
 
