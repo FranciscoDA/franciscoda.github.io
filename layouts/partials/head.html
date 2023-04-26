@@ -10,7 +10,7 @@
         }
     </style>
     {{ with $style := resources.Get "main.scss" | resources.ToCSS (dict "targetPath" "/css/style.css") | minify | resources.Fingerprint "sha512" }}
-    <link rel="stylesheet" href="{{ $style.Permalink | safeURL }}" integrity="{{ $style.Data.Integrity }}" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ $style.RelPermalink | safeURL }}" integrity="{{ $style.Data.Integrity }}" crossorigin="anonymous">
     {{ end }}
     <link href="/vendor/fontawesome/css/all.min.css" rel="stylesheet">
     {{ block "outline-head" . }}{{ end }}
