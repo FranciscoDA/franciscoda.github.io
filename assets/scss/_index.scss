@@ -48,7 +48,7 @@ section#experience, section#education {
             max-width: 100%;
             box-sizing: border-box;
             margin: 2em auto 0 auto;
-        
+
             &>div:nth-child(1) {
                 background-color: $card-bg;
                 color: #ffffff;
@@ -56,7 +56,7 @@ section#experience, section#education {
                 border-radius: $card-border-radius;
                 box-shadow: $card-box-shadow;
                 border: 1px solid #000000;
-        
+
                 flex-grow: 1;
                 align-self: stretch;
                 p:nth-of-type(2n) {
@@ -64,10 +64,8 @@ section#experience, section#education {
                 }
             }
             &>div:nth-child(2) {
-                max-width: 4em;
-                width: 4em;
-                max-height: 4em;
-                height: 4em;
+                width: 4.5em;
+                height: 4.5em;
                 margin-top: 5px;
                 margin-left: 1em;
                 margin-bottom: 0;
@@ -77,14 +75,11 @@ section#experience, section#education {
                 }
 
                 img {
-                    border: 1px solid black;
-                    background-color: #ffffff;
                     border-radius: 50%;
                     box-sizing: border-box;
-                    background-color: #ffffff;
                 }
             }
-        
+
             h4 {
                 display: flex;
                 margin-top: 0.1em;
@@ -127,6 +122,7 @@ section#projects {
         & > li {
             display: flex;
             flex-direction: column;
+            min-height: 12em;
             width: 12em;
             margin-bottom: 1em;
             margin-right: 1em;

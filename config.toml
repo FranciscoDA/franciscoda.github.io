@@ -6,7 +6,7 @@ theme = 'hugo-cat'
 [params]
 ava = 'img/avatar.png'
 owner = 'Francisco Altoe'
-talk = "Hello world! <br> My name is Francisco Altoe. I'm a full stack developer from Argentina 🇦🇷 <br> My preferred web stack is Django 🐍 + React ⚛️ <br> Find out about my socials, professional experience and open source projects below:"
+talk = "Hello world! <br> My name is Francisco. I'm a full stack developer from Argentina 🇦🇷 <br> My preferred web stack is Django 🐍 + React ⚛️ <br> Find out about my socials, professional experience and open source projects below:"
 blogSection = ['blog']
 description = 'Francisco Altoe'
 
@@ -21,5 +21,3 @@ description = 'Francisco Altoe'
 #name = 'Blog'
 #url = '/blog/'
 #weight = 2
-
-

@@ -15,14 +15,13 @@
     <link href="/vendor/fontawesome/css/all.min.css" rel="stylesheet">
     {{ block "outline-head" . }}{{ end }}
     <script src="/js/rot_n.js"></script>
+    <title>
+        {{ if .IsHome }}
+            {{ .Site.Title | htmlEscape }}
+        {{ else if .Page.Title }}
+            {{ .Page.Title | htmlEscape }} | {{ .Site.Title | htmlEscape }}
+        {{ else }}
+            {{ .Site.Title | htmlEscape }}
+        {{ end }}
+    </title>
 </head>
-
-<title>
-    {{ if .IsHome }}
-        {{ .Site.Title | htmlEscape }}
-    {{ else if .Page.Title }}
-        {{ .Page.Title | htmlEscape }} | {{ .Site.Title | htmlEscape }}
-    {{ else }}
-        {{ .Site.Title | htmlEscape }}
-    {{ end }}
-</title>
