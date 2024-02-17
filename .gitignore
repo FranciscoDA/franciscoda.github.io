@@ -2,3 +2,4 @@
 *.swp
 build/*
 resources/_gen/*
+public
